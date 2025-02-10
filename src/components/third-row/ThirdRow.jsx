@@ -40,7 +40,7 @@ const ThirdRow = () => {
                         </div>
                     </div>
             </div>
-<div className='grid grid-cols-1 md:grid-cols-2 gap-16 pt-10 md:pt-6 lg:pt-0'>{
+<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 pt-10 md:pt-6 lg:pt-0'>{
 products.map((product, index) => ( 
         <ThirdRowCart key={index} title={product.title} desc={product.desc} logo={product.logo} />
     ))
