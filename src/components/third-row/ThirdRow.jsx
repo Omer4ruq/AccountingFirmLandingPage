@@ -27,31 +27,20 @@ const ThirdRow = () => {
             },
         ]
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 mt-20 p-2 md:p-24'>
-            <div className='text-start w-[500px]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 mt-20 p-4 md:p-24'>
+            <div className='text-center my-auto md:text-start w-[300px] md:w-[450px] lg:w-[500px]'>
                 <h1 className='
 #E77E49 text-2xl font-medium mb-8'>Best Offer For You</h1>
-                <h1 className='text-5xl text-[#141B2B] mb-8 '>Do More, In Less Time!</h1>
-                <p className='text-[#848484] text-lg '>Send reminders to your debtors in just a few clicks. Simply set-up and automate follow-ups to get paid more quickly.</p>
-             <div className='flex gap-8 jus items-center'>
-                             {/* <div className='bg-[#E77E49] w-[170px] md:w-[235px] h-[44px] md:h-[56px] mt-6  rounded-full '>
-                                 
-                                 <div className='flex items-center gap-1 md:gap-4 px-4 md:px-8 py-3 md:py-4'>
-                                 <h1 className='text-white  font-normal md:font-medium text-sm md:text-base  '>Get Started Now</h1>
-                                 <IoIosArrowDroprightCircle  className='text-white'/>
-                                 </div>
-             
-                                 </div> */}
-                            <Button title={"Get Started"}/>
-                                <div className='flex gap-2 items-center pt-6 text-base font-medium text-[#848484]'>
-                                <p>Learn More 
-                                </p>
-                                <RiArrowRightDoubleFill />
-                                </div>
-             
-                             </div>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl text-[#141B2B] mb-8 '>Do More, In Less Time!</h1>
+                <p className='text-[#848484] text-sm lg:text-lg '>Send reminders to your debtors in just a few clicks. Simply set-up and automate follow-ups to get paid more quickly.</p>
+                <div className='flex flex-col md:flex-row gap-4 mt-4 pb-2 items-center md:items-start'>
+                    <Button title={"Get Started"}/>
+                        <div className='flex items-center py-3 gap-2 text-black cursor-pointer'>
+                            <p>Learn More</p> <RiArrowRightDoubleFill />
+                        </div>
+                    </div>
             </div>
-<div className='grid grid-cols-2 gap-4 pt-10 md:pt-0'>{
+<div className='grid grid-cols-1 md:grid-cols-2 gap-16 pt-10 md:pt-6 lg:pt-0'>{
 products.map((product, index) => ( 
         <ThirdRowCart key={index} title={product.title} desc={product.desc} logo={product.logo} />
     ))
