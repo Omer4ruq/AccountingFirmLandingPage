@@ -5,8 +5,8 @@ import Button from '../button';
 
 const SeventhRow = () => {
     return (
-        <div className=''>
-<div className='mx-auto w-[95%]  max-w-[1140px] bg-[#0C2E62] h-[532px] rounded-2xl'>
+        <div className='bg-white pt-20'>
+<div className='mx-auto w-[95%]  max-w-[1140px] bg-[#0C2E62] h-[532px] rounded-2xl  p-4'>
     <div className='mx-auto w-fit pt-24'>
     <div className='bg-white bg-opacity-10 w-fit   mx-auto md:mx-0 px-4 py-2 rounded-lg flex items-center gap-2'>
                                     <img src={authLogo} alt="Auth Logo" className='w-6 md:w-8' />

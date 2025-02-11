@@ -28,7 +28,7 @@ const ThirdRow = () => {
         ]
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 mt-20 p-4 md:p-24'>
-            <div className='text-center my-auto md:text-start w-[300px] md:w-[450px] lg:w-[500px]'>
+            <div className='text-center my-auto md:text-start w-full md:w-[450px] lg:w-[500px]'>
                 <h1 className='
 #E77E49 text-2xl font-medium mb-8'>Best Offer For You</h1>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl text-[#141B2B] mb-8 '>Do More, In Less Time!</h1>
@@ -40,7 +40,7 @@ const ThirdRow = () => {
                         </div>
                     </div>
             </div>
-<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 pt-10 md:pt-6 lg:pt-0'>{
+<div className='grid grid-cols-2 lg:grid-cols-2 gap-8 pt-10 md:pt-6 lg:pt-0'>{
 products.map((product, index) => ( 
         <ThirdRowCart key={index} title={product.title} desc={product.desc} logo={product.logo} />
     ))

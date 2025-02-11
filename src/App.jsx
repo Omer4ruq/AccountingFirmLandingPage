@@ -10,6 +10,8 @@ import FifthRow from './components/fifth-row/FifthRow'
 import SixthRow from './components/sixth-row/SixthRow'
 import FAQ from './components/FAQ/FAQ'
 import SeventhRow from './components/seventh-row/SeventhRow'
+import SlideSweep from './components/SlideSweep'
+import Contact from './components/Contact/Contact'
 
 function App() {
 
@@ -23,7 +25,9 @@ function App() {
   <FourthRow></FourthRow>
   <FifthRow></FifthRow>
   <SixthRow></SixthRow>
+  <SlideSweep></SlideSweep>
  <FAQ></FAQ>
+ <Contact></Contact>
  <SeventhRow></SeventhRow>
   <Footer></Footer>
     </div>

@@ -6,8 +6,8 @@ import Button from '../button';
 const FifthRow = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 p-2 md:p-20'>
-            <div>
-                <img src={fifthPick} alt="" />
+            <div className='object-cover'>
+                <img src={fifthPick} alt="" className=''/>
             </div>
           
                 <div className='text-center my-auto md:text-start w-[300px] md:w-[450px] lg:w-[500px]'>

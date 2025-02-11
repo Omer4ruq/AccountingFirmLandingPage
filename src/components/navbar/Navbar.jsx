@@ -12,7 +12,6 @@ const Navbar = () => {
 
     return (
         <div>
-       
             <div className='bg-white mx-auto w-full px-10 lg:container py-4 flex justify-between items-center'>
                 <div className='flex gap-3'>
                     <img src={logo} alt="Logo" />
@@ -20,7 +19,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden text-xs lg:text-base font-medium md:flex'>
-                    <ul className='hidden md:flex md:gap-4 lg:gap-6  '>
+                    <ul className='hidden md:flex md:gap-4 lg:gap-6'>
                         <li>Home</li>
                         <li>Product</li>
                         <li>Service</li>
@@ -30,8 +29,8 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <div className='bg-[#E77E49] bg-opacity-10 py-2 lg:py-3 px-4 lg:px-8  rounded-full hidden md:block'>
-                        <h1 className='text-[#E77E49] font-normal text-base text-wrap '>My Account</h1>
+                    <div className='bg-[#E77E49] bg-opacity-10 py-2 lg:py-3 px-4 lg:px-8 rounded-full hidden md:block'>
+                        <h1 className='text-[#E77E49] font-normal text-base text-wrap'>My Account</h1>
                     </div>
                 </div>
 
@@ -40,28 +39,29 @@ const Navbar = () => {
                     onClick={toggleSidebar}
                 >
                     <FaBars />
-
-                   
                 </button>
             </div>
 
-            {isSidebarOpen && (
-                <div className="md:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-50 ">
-                    <div className='flex justify-between items-center p-4'>
-                        <img src={logo} alt="Logo" className="w-16" />
-                        <button onClick={toggleSidebar}>
+            {/* Sidebar with smooth transition */}
+            <div 
+                className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-500 ${
+                    isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+                }`}
+            >
+                <div className='flex justify-between items-center p-4'>
+                    <img src={logo} alt="Logo" className="w-16" />
+                    <button onClick={toggleSidebar}>
                         <IoMdClose />
-                        </button>
-                    </div>
-                    <ul className='p-4'>
-                        <li className='py-2'>Home</li>
-                        <li className='py-2'>Product</li>
-                        <li className='py-2'>Service</li>
-                        <li className='py-2'>Contact us</li>
-                        <li className='py-2'>About BeLife</li>
-                    </ul>
+                    </button>
                 </div>
-            )}
+                <ul className='p-4'>
+                    <li className='py-2'>Home</li>
+                    <li className='py-2'>Product</li>
+                    <li className='py-2'>Service</li>
+                    <li className='py-2'>Contact us</li>
+                    <li className='py-2'>About BeLife</li>
+                </ul>
+            </div>
         </div>
     );
 };

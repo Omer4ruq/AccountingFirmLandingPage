@@ -51,10 +51,10 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="border-2 bg-white border-gray-100 rounded-lg">
               <button 
-                className="flex items-center justify-between w-full p-6 text-left"
+                className="flex items-center justify-between w-full pt-6 pb-0 px-6 text-left"
                 onClick={() => toggleFAQ(index)}
               >
-                <h2 className="font-semibold text-gray-700 dark:text-white">{faq.question}</h2>
+                <h2 className="font-semibold text-gray-700 ">{faq.question}</h2>
 
                 <span className="p-2 rounded-full transition-all duration-300 drop-shadow-md"
                   style={{
@@ -73,11 +73,15 @@ const FAQ = () => {
                 </span>
               </button>
 
-              {openIndex === index && (
-                <div className="p-6 text-sm text-gray-500 dark:text-gray-300 transition-all duration-300">
-                  {faq.answer}
-                </div>
-              )}
+              <div
+      className={`grid transition-all duration-500 overflow-hidden ${
+        openIndex === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+      }`}
+    >
+      <div className="pt-2 pb-6 px-6 text-sm text-gray-500 overflow-hidden">
+        {faq.answer}
+      </div>
+    </div>
             </div>
           ))}
         </div>
