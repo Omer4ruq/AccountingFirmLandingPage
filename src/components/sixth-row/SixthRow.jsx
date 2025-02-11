@@ -27,7 +27,7 @@ const SixthRow = () => {
 
                     </div>
                 </div>
-                <div className='bg-white flex justify-between w-[400px] lg:w-[555px] p-10 rounded-md mb-6'>
+                <div className='bg-white flex justify-between w-[350px] md:w-[400px] lg:w-[555px] p-10 rounded-md mb-6'>
                     <div className=''>
                         <div className='flex gap-4 items-center  lg:w-[334px]'>
                             <div className='bg-red-500 rounded-full w-3 h-3'></div>

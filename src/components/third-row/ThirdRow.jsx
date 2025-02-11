@@ -27,7 +27,7 @@ const ThirdRow = () => {
             },
         ]
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 mt-20 p-4 md:p-24'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 mt-20 p-4 md:p-24 bg-white'>
             <div className='text-center my-auto md:text-start w-full md:w-[450px] lg:w-[500px]'>
                 <h1 className='
 #E77E49 text-2xl font-medium mb-8'>Best Offer For You</h1>

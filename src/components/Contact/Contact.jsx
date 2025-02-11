@@ -41,7 +41,7 @@ const Contact = () => {
   };
     return (
         <div>
-<div className='text-start max-w-full mx-auto flex-1 md:flex bg-white p-2 mb-16'>
+<div className='text-start max-w-[1440px] mx-auto flex-1 md:flex bg-white p-2 mb-16'>
             <div className='bg-[#0C2E62] w-full md:w-[41%]  h-[780px] p-6 flex flex-col justify-between relative rounded-md'>
                 <div>
                 <h1 className='font-semibold text-3xl text-white'>
@@ -51,7 +51,7 @@ const Contact = () => {
             Say Something to start a live chat!
         </h2>
                 </div>
-                <div className='bg-white opacity-[12%] w-[323px] h-[323px] rounded-full absolute bottom-[-20%] right-[-20%] '></div>
+                <div className='hidden sm:block bg-white opacity-[12%] w-[323px] h-[323px] rounded-full absolute bottom-[-20%] right-[-20%] '></div>
                 <div className='bg-white opacity-[12%] w-[166px] h-[166px] rounded-full absolute bottom-[5%] right-[5%] '></div>
     
         <div className='text-white space-y-10 text-lg font-normal'>

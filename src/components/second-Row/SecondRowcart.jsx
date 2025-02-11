@@ -11,7 +11,7 @@ const SecondRowCart = ({ title, desc, logo }) => {
 
       <div className="flex-grow"></div>
 
-      <button className="bg-[#FDF2ED] hover:bg-[#f8d9c4] transition-colors py-3 px-6 font-medium text-base rounded-lg text-center mx-auto mb-4">
+      <button className="bg-[#FDF2ED] hover:bg-[#f8d9c4] transition-colors py-3 px-2 font-medium text-base rounded-lg text-center mx-auto mb-4">
         Learn More
       </button>
     </div>
