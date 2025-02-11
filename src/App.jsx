@@ -8,6 +8,8 @@ import FourthRow from './components/fourth-row/FourthRow'
 import Footer from './components/footer/Footer'
 import FifthRow from './components/fifth-row/FifthRow'
 import SixthRow from './components/sixth-row/SixthRow'
+import FAQ from './components/FAQ/FAQ'
+import SeventhRow from './components/seventh-row/SeventhRow'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
   <FourthRow></FourthRow>
   <FifthRow></FifthRow>
   <SixthRow></SixthRow>
+ <FAQ></FAQ>
+ <SeventhRow></SeventhRow>
   <Footer></Footer>
     </div>
 
